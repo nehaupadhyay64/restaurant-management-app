@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant App</title>
+<style>
+ body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/736x/2a/84/20/2a84206bc380d9d63637d18b7cdd0975.jpg");
+  background-size:cover;
+  
+}
+
+#app {
+  background: white;
+  width: 90%; 
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  overflow-x: hidden; 
+}
+
+h1 {
+  color: #ff5e62;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #ff5e62;
+}
+
+button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+
+#navbar button {
+  padding: 8px 12px;
+  background: #ff6b6b;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#navbar input {
+  padding: 8px;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+.food-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.food-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.food-card h3 {
+  margin: 10px 0;
+  color: #ff5e62;
+}
+
+p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
